@@ -85,6 +85,11 @@
             <version>1.11.423</version>
         </dependency>
 
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -161,11 +166,11 @@
                 </executions>
                 <!-- Manage the plugin's dependency -->
                 <!--<dependencies>-->
-                    <!--<dependency>-->
-                        <!--<groupId>mysql</groupId>-->
-                        <!--<artifactId>mysql-connector-java</artifactId>-->
-                        <!--<version>${mysql.version}</version>-->
-                    <!--</dependency>-->
+                <!--<dependency>-->
+                <!--<groupId>mysql</groupId>-->
+                <!--<artifactId>mysql-connector-java</artifactId>-->
+                <!--<version>${mysql.version}</version>-->
+                <!--</dependency>-->
                 <!--</dependencies>-->
                 <!-- Specify the plugin configuration.
                 The configuration format is the same as for the standalone code generator -->
@@ -173,9 +178,9 @@
                     <!-- JDBC connection parameters -->
                     <jdbc>
                         <driver>com.mysql.cj.jdbc.Driver</driver>
-                        <url>jdbc:mysql://localhost:3306/cr_db?serverTimezone=UTC</url>
-                        <user>root</user>
-                        <password>crbilbydb</password>
+                        <url>jdbc:mysql://localhost:55555/cr_db?serverTimezone=UTC&amp;useSSL=false</url>
+                        <user>cr_db</user>
+                        <password>password</password>
                     </jdbc>
 
 
