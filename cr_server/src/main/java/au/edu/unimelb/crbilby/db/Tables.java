@@ -32,6 +32,11 @@ import javax.annotation.Generated;
 public class Tables {
 
     /**
+     * The table <code>cr_db.Escalate_level</code>.
+     */
+    public static final EscalateLevel ESCALATE_LEVEL = au.edu.unimelb.crbilby.db.tables.EscalateLevel.ESCALATE_LEVEL;
+
+    /**
      * The table <code>cr_db.case</code>.
      */
     public static final Case CASE = au.edu.unimelb.crbilby.db.tables.Case.CASE;
@@ -60,11 +65,6 @@ public class Tables {
      * The table <code>cr_db.crime_type</code>.
      */
     public static final CrimeType CRIME_TYPE = au.edu.unimelb.crbilby.db.tables.CrimeType.CRIME_TYPE;
-
-    /**
-     * The table <code>cr_db.Escalate_level</code>.
-     */
-    public static final EscalateLevel ESCALATE_LEVEL = au.edu.unimelb.crbilby.db.tables.EscalateLevel.ESCALATE_LEVEL;
 
     /**
      * The table <code>cr_db.lea_post</code>.

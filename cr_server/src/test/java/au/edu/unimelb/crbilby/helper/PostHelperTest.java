@@ -54,11 +54,11 @@ public class PostHelperTest {
         post.level = EscalationLevel.LOCAL;
         post.chief = profile.userName;
 
-        PostHelper.createPost(post);
-
-        // Check functionality
-        Integer postID = PostHelper.getChiefPostID(profile.userName);
-
-        System.out.println(postID);
+//        PostHelper.createPost(post);
+//
+//        // Check functionality
+//        Integer postID = PostHelper.getChiefPostID(profile.userName);
+//
+//        System.out.println(postID);
     }
 }

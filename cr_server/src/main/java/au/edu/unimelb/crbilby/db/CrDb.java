@@ -39,12 +39,17 @@ import org.jooq.impl.SchemaImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class CrDb extends SchemaImpl {
 
-    private static final long serialVersionUID = -1159595298;
+    private static final long serialVersionUID = -355405730;
 
     /**
      * The reference instance of <code>cr_db</code>
      */
     public static final CrDb CR_DB = new CrDb();
+
+    /**
+     * The table <code>cr_db.Escalate_level</code>.
+     */
+    public final EscalateLevel ESCALATE_LEVEL = au.edu.unimelb.crbilby.db.tables.EscalateLevel.ESCALATE_LEVEL;
 
     /**
      * The table <code>cr_db.case</code>.
@@ -75,11 +80,6 @@ public class CrDb extends SchemaImpl {
      * The table <code>cr_db.crime_type</code>.
      */
     public final CrimeType CRIME_TYPE = au.edu.unimelb.crbilby.db.tables.CrimeType.CRIME_TYPE;
-
-    /**
-     * The table <code>cr_db.Escalate_level</code>.
-     */
-    public final EscalateLevel ESCALATE_LEVEL = au.edu.unimelb.crbilby.db.tables.EscalateLevel.ESCALATE_LEVEL;
 
     /**
      * The table <code>cr_db.lea_post</code>.
@@ -121,13 +121,13 @@ public class CrDb extends SchemaImpl {
 
     private final List<Table<?>> getTables0() {
         return Arrays.<Table<?>>asList(
+            EscalateLevel.ESCALATE_LEVEL,
             Case.CASE,
             CaseAssign.CASE_ASSIGN,
             CaseEvidence.CASE_EVIDENCE,
             CaseNotes.CASE_NOTES,
             CaseOtherCrimes.CASE_OTHER_CRIMES,
             CrimeType.CRIME_TYPE,
-            EscalateLevel.ESCALATE_LEVEL,
             LeaPost.LEA_POST,
             Post.POST,
             Profile.PROFILE);
